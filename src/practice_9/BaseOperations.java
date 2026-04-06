@@ -8,9 +8,9 @@ public class BaseOperations {
         //1. Фильтрация строк по длине больше 5
         List<String> stringList = Arrays.asList("У", "Лукоморья", "Дуб", "Зеленый");
         List<String> filteredStringListByLength = stringList.stream()
-                .filter(str -> str.length() <= 5)
+                .filter(str -> str.length() > 5)
                 .toList();
-        System.out.println("Cтроки длиной 5 символов и менее: " + filteredStringListByLength);
+        System.out.println("Cтроки длиной более 5 символов: " + filteredStringListByLength);
 
         //2. Фильтрация чисел, кратных 5
         List<Integer> numberList = Arrays.asList(1, 2 , 5, 7, 15, 45);
